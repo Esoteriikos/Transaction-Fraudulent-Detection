@@ -145,14 +145,14 @@ def test_is_anomalous_fraudulent_transaction(setup_mocks):
 
 def test_health_check_endpoint(setup_mocks):
     app, _, _ = setup_mocks
-    
+
     # Create a test client using FastAPI's test client
     from fastapi.testclient import TestClient
-    client = TestClient(app.app)
-    
+    client = TestClient(app)  # Pass the FastAPI app directly
+
     # Test the health check endpoint
     response = client.get("/health")
-    
+
     # Verify the response
     assert response.status_code == 200
     data = response.json()
