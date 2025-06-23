@@ -322,3 +322,11 @@ The Grafana dashboard (available at http://localhost:3000) provides real-time in
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## ⚠️ Data & Model Training Notice
+
+Currently, the data used for model training is generated synthetically and does not reflect real-world transaction patterns. As a result, the trained anomaly detection model may not perform well on realistic or production data.
+
+**How to improve:**
+- Replace the synthetic data generation with data collected from a live API or real transaction logs.
+- Retrain the model using features extracted from this real or simulated data for better anomaly detection performance.
