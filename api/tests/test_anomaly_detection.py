@@ -148,7 +148,7 @@ def test_health_check_endpoint(setup_mocks):
 
     # Create a test client using FastAPI's test client
     from fastapi.testclient import TestClient
-    client = TestClient(app)  # Pass the FastAPI app directly
+    client = TestClient(app.app)  # Use the FastAPI app instance
 
     # Test the health check endpoint
     response = client.get("/health")
