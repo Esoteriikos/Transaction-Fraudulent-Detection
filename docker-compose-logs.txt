@@ -1,0 +1,281 @@
+anomaly-detection-api-1  | INFO:     Started server process [1]
+anomaly-detection-api-1  | INFO:     Waiting for application startup.
+anomaly-detection-api-1  | INFO:     Application startup complete.
+anomaly-detection-api-1  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+kafka-1                  | ===> User
+kafka-1                  | uid=1000(appuser) gid=1000(appuser) groups=1000(appuser)
+kafka-1                  | ===> Configuring ...
+kafka-1                  | KAFKA_PROCESS_ROLES is required.
+kafka-1                  | Command [/usr/local/bin/dub ensure KAFKA_PROCESS_ROLES] FAILED !
+zookeeper-1              | ===> User
+zookeeper-1              | uid=1000(appuser) gid=1000(appuser) groups=1000(appuser)
+zookeeper-1              | ===> Configuring ...
+zookeeper-1              | ===> Running preflight checks ... 
+zookeeper-1              | ===> Check if /var/lib/zookeeper/data is writable ...
+zookeeper-1              | ===> Check if /var/lib/zookeeper/log is writable ...
+zookeeper-1              | ===> Launching ... 
+zookeeper-1              | ===> Launching zookeeper ... 
+zookeeper-1              | [2025-06-14 10:28:18,259] INFO Reading configuration from: /etc/kafka/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+zookeeper-1              | [2025-06-14 10:28:18,261] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+zookeeper-1              | [2025-06-14 10:28:18,261] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+grafana-1                | logger=settings t=2025-06-14T10:28:14.236222178Z level=info msg="Starting Grafana" version=11.5.2 commit=598e0338d5374d6bc404b02a58094132c5eeceb8 branch=HEAD compiled=2025-06-14T10:28:14Z
+grafana-1                | logger=settings t=2025-06-14T10:28:14.236931478Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237100878Z level=info msg="Config loaded from" file=/etc/grafana/grafana.ini
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237156578Z level=info msg="Config overridden from command line" arg="default.paths.data=/var/lib/grafana"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237192078Z level=info msg="Config overridden from command line" arg="default.paths.logs=/var/log/grafana"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237236078Z level=info msg="Config overridden from command line" arg="default.paths.plugins=/var/lib/grafana/plugins"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237243978Z level=info msg="Config overridden from command line" arg="default.paths.provisioning=/etc/grafana/provisioning"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237248478Z level=info msg="Config overridden from command line" arg="default.log.mode=console"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237253178Z level=info msg="Config overridden from Environment variable" var="GF_PATHS_DATA=/var/lib/grafana"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237257578Z level=info msg="Config overridden from Environment variable" var="GF_PATHS_LOGS=/var/log/grafana"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237261578Z level=info msg="Config overridden from Environment variable" var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237265678Z level=info msg="Config overridden from Environment variable" var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237269678Z level=info msg="Config overridden from Environment variable" var="GF_SECURITY_ADMIN_USER=admin"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237275878Z level=info msg="Config overridden from Environment variable" var="GF_SECURITY_ADMIN_PASSWORD=*********"
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237280278Z level=info msg=Target target=[all]
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237303878Z level=info msg="Path Home" path=/usr/share/grafana
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237308678Z level=info msg="Path Data" path=/var/lib/grafana
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237312578Z level=info msg="Path Logs" path=/var/log/grafana
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237323278Z level=info msg="Path Plugins" path=/var/lib/grafana/plugins
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237328578Z level=info msg="Path Provisioning" path=/etc/grafana/provisioning
+grafana-1                | logger=settings t=2025-06-14T10:28:14.237333078Z level=info msg="App mode production"
+grafana-1                | logger=featuremgmt t=2025-06-14T10:28:14.237980378Z level=info msg=FeatureToggles logRowsPopoverMenu=true managedPluginsInstall=true prometheusAzureOverrideAudience=true cloudWatchRoundUpEndTime=true lokiStructuredMetadata=true formatString=true accessControlOnCall=true addFieldFromCalculationStatFunctions=true angularDeprecationUI=true awsAsyncQueryCaching=true logsExploreTableVisualisation=true userStorageAPI=true annotationPermissionUpdate=true lokiLabelNamesQueryApi=true useSessionStorageForRedirection=true cloudWatchCrossAccountQuerying=true alertingSimplifiedRouting=true lokiQueryHints=true preinstallAutoUpdate=true unifiedRequestLog=true zipkinBackendMigration=true ssoSettingsApi=true dashboardSceneSolo=true correlations=true reportingUseRawTimeRange=true newFiltersUI=true logsInfiniteScrolling=true alertingInsights=true panelMonitoring=true exploreMetrics=true alertingNoDataErrorExecution=true publicDashboardsScene=true influxdbBackendMigration=true openSearchBackendFlowEnabled=true nestedFolders=true pinNavItems=true dashgpt=true logsContextDatasourceUi=true alertingApiServer=true onPremToCloudMigrations=true accessActionSets=true tlsMemcached=true dataplaneFrontendFallback=true cloudWatchNewLabelParsing=true dashboardSceneForViewers=true newPDFRendering=true lokiQuerySplitting=true azureMonitorEnableUserAuth=true kubernetesPlaylists=true transformationsVariableSupport=true transformationsRedesign=true recordedQueriesMulti=true alertingUIOptimizeReducer=true dashboardScene=true recoveryThreshold=true groupToNestedTableTransformation=true promQLScope=true newDashboardSharingComponent=true
+grafana-1                | logger=sqlstore t=2025-06-14T10:28:14.238099178Z level=info msg="Connecting to DB" dbtype=sqlite3
+grafana-1                | logger=migrator t=2025-06-14T10:28:14.246735479Z level=info msg="Locking database"
+grafana-1                | logger=migrator t=2025-06-14T10:28:14.246781179Z level=info msg="Starting DB migrations"
+grafana-1                | logger=migrator t=2025-06-14T10:28:14.274117182Z level=info msg="migrations completed" performed=0 skipped=629 duration=1.0954ms
+grafana-1                | logger=migrator t=2025-06-14T10:28:14.275482982Z level=info msg="Unlocking database"
+grafana-1                | logger=secrets t=2025-06-14T10:28:14.278377682Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+grafana-1                | logger=plugin.angulardetectorsprovider.dynamic t=2025-06-14T10:28:14.432190299Z level=info msg="Restored cache from database" duration=592.1µs
+grafana-1                | logger=plugin.store t=2025-06-14T10:28:14.436286299Z level=info msg="Loading plugins..."
+grafana-1                | logger=local.finder t=2025-06-14T10:28:14.512074807Z level=warn msg="Skipping finding plugins as directory does not exist" path=/usr/share/grafana/plugins-bundled
+grafana-1                | logger=plugins.registration t=2025-06-14T10:28:14.598196917Z level=info msg="Plugin registered" pluginId=grafana-lokiexplore-app
+grafana-1                | logger=plugins.registration t=2025-06-14T10:28:14.651252423Z level=info msg="Plugin registered" pluginId=grafana-pyroscope-app
+grafana-1                | logger=plugin.store t=2025-06-14T10:28:14.651318023Z level=info msg="Plugins loaded" count=56 duration=215.032324ms
+grafana-1                | logger=resource-migrator t=2025-06-14T10:28:14.654762523Z level=info msg="Locking database"
+grafana-1                | logger=resource-migrator t=2025-06-14T10:28:14.654809823Z level=info msg="Starting DB migrations"
+grafana-1                | logger=resource-migrator t=2025-06-14T10:28:14.655916323Z level=info msg="migrations completed" performed=0 skipped=22 duration=54.7µs
+grafana-1                | logger=resource-migrator t=2025-06-14T10:28:14.656447923Z level=info msg="Unlocking database"
+grafana-1                | logger=query_data t=2025-06-14T10:28:14.667846124Z level=info msg="Query Service initialization"
+grafana-1                | logger=live.push_http t=2025-06-14T10:28:14.673419025Z level=info msg="Live Push Gateway initialization"
+grafana-1                | logger=ngalert.notifier.alertmanager org=1 t=2025-06-14T10:28:14.680973926Z level=info msg="Applying new configuration to Alertmanager" configHash=d2c56faca6af2a5772ff4253222f7386
+grafana-1                | logger=ngalert.state.manager t=2025-06-14T10:28:14.700781828Z level=info msg="Running in alternative execution of Error/NoData mode"
+grafana-1                | logger=cloudmigration.service t=2025-06-14T10:28:14.703594528Z level=info msg="using gcom client for auth"
+grafana-1                | logger=infra.usagestats.collector t=2025-06-14T10:28:14.703877428Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
+grafana-1                | logger=provisioning.plugins t=2025-06-14T10:28:14.783577837Z level=error msg="Failed to read plugin provisioning files from directory" path=/etc/grafana/provisioning/plugins error="open /etc/grafana/provisioning/plugins: no such file or directory"
+grafana-1                | logger=provisioning.alerting t=2025-06-14T10:28:14.784194237Z level=error msg="can't read alerting provisioning files from directory" path=/etc/grafana/provisioning/alerting error="open /etc/grafana/provisioning/alerting: no such file or directory"
+grafana-1                | logger=provisioning.alerting t=2025-06-14T10:28:14.784265537Z level=info msg="starting to provision alerting"
+grafana-1                | logger=provisioning.alerting t=2025-06-14T10:28:14.784300537Z level=info msg="finished to provision alerting"
+grafana-1                | logger=ngalert.state.manager t=2025-06-14T10:28:14.784766137Z level=info msg="Warming state cache for startup"
+grafana-1                | logger=grafanaStorageLogger t=2025-06-14T10:28:14.787548337Z level=info msg="Storage starting"
+grafana-1                | logger=http.server t=2025-06-14T10:28:14.788909837Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
+grafana-1                | logger=ngalert.multiorg.alertmanager t=2025-06-14T10:28:14.788979938Z level=info msg="Starting MultiOrg Alertmanager"
+grafana-1                | logger=ngalert.state.manager t=2025-06-14T10:28:14.935009648Z level=info msg="State cache has been initialized" states=0 duration=150.235711ms
+grafana-1                | logger=ngalert.scheduler t=2025-06-14T10:28:14.935133348Z level=info msg="Starting scheduler" tickInterval=10s maxAttempts=3
+grafana-1                | logger=ticker t=2025-06-14T10:28:14.935213448Z level=info msg=starting first_tick=2025-06-14T10:28:20Z
+grafana-1                | logger=provisioning.dashboard t=2025-06-14T10:28:14.945236848Z level=info msg="starting to provision dashboards"
+grafana-1                | logger=provisioning.dashboard t=2025-06-14T10:28:14.967882947Z level=info msg="finished to provision dashboards"
+grafana-1                | logger=grafana.update.checker t=2025-06-14T10:28:15.244761939Z level=info msg="Update check succeeded" duration=457.886402ms
+grafana-1                | logger=plugins.update.checker t=2025-06-14T10:28:15.255830839Z level=info msg="Update check succeeded" duration=468.713402ms
+grafana-1                | logger=grafana-apiserver t=2025-06-14T10:28:15.289134438Z level=info msg="Adding GroupVersion iam.grafana.app v0alpha1 to ResourceManager"
+grafana-1                | logger=grafana-apiserver t=2025-06-14T10:28:15.293479338Z level=info msg="Adding GroupVersion notifications.alerting.grafana.app v0alpha1 to ResourceManager"
+grafana-1                | logger=grafana-apiserver t=2025-06-14T10:28:15.294424438Z level=info msg="Adding GroupVersion userstorage.grafana.app v0alpha1 to ResourceManager"
+grafana-1                | logger=grafana-apiserver t=2025-06-14T10:28:15.295136138Z level=info msg="Adding GroupVersion playlist.grafana.app v0alpha1 to ResourceManager"
+grafana-1                | logger=resource-server t=2025-06-14T10:28:15.295296438Z level=warn msg="failed to register storage metrics" error="duplicate metrics collector registration attempted"
+grafana-1                | logger=resource-server t=2025-06-14T10:28:15.295426438Z level=warn msg="failed to register storage metrics" error="duplicate metrics collector registration attempted"
+grafana-1                | logger=resource-server t=2025-06-14T10:28:15.295491738Z level=warn msg="failed to register storage metrics" error="duplicate metrics collector registration attempted"
+grafana-1                | logger=grafana-apiserver t=2025-06-14T10:28:15.297590138Z level=info msg="Adding GroupVersion dashboard.grafana.app v0alpha1 to ResourceManager"
+grafana-1                | logger=grafana-apiserver t=2025-06-14T10:28:15.298515938Z level=info msg="Adding GroupVersion dashboard.grafana.app v1alpha1 to ResourceManager"
+grafana-1                | logger=grafana-apiserver t=2025-06-14T10:28:15.299376838Z level=info msg="Adding GroupVersion dashboard.grafana.app v2alpha1 to ResourceManager"
+grafana-1                | logger=grafana-apiserver t=2025-06-14T10:28:15.300086038Z level=info msg="Adding GroupVersion featuretoggle.grafana.app v0alpha1 to ResourceManager"
+grafana-1                | logger=app-registry t=2025-06-14T10:28:15.353228136Z level=info msg="app registry initialized"
+mlflow-1                 | [2025-06-14 10:28:15 +0000] [21] [INFO] Starting gunicorn 20.1.0
+mlflow-1                 | [2025-06-14 10:28:15 +0000] [21] [INFO] Listening at: http://0.0.0.0:5000 (21)
+mlflow-1                 | [2025-06-14 10:28:15 +0000] [21] [INFO] Using worker: sync
+mlflow-1                 | [2025-06-14 10:28:15 +0000] [22] [INFO] Booting worker with pid: 22
+mlflow-1                 | [2025-06-14 10:28:15 +0000] [23] [INFO] Booting worker with pid: 23
+mlflow-1                 | [2025-06-14 10:28:15 +0000] [24] [INFO] Booting worker with pid: 24
+mlflow-1                 | [2025-06-14 10:28:15 +0000] [25] [INFO] Booting worker with pid: 25
+zookeeper-1              | [2025-06-14 10:28:18,262] INFO observerMasterPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+zookeeper-1              | [2025-06-14 10:28:18,262] INFO metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+zookeeper-1              | [2025-06-14 10:28:18,263] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
+zookeeper-1              | [2025-06-14 10:28:18,263] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
+zookeeper-1              | [2025-06-14 10:28:18,263] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
+zookeeper-1              | [2025-06-14 10:28:18,263] WARN Either no config or no quorum defined in config, running in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
+zookeeper-1              | [2025-06-14 10:28:18,265] INFO Log4j 1.2 jmx support not found; jmx disabled. (org.apache.zookeeper.jmx.ManagedUtil)
+zookeeper-1              | [2025-06-14 10:28:18,265] INFO Reading configuration from: /etc/kafka/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+zookeeper-1              | [2025-06-14 10:28:18,265] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+zookeeper-1              | [2025-06-14 10:28:18,265] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+zookeeper-1              | [2025-06-14 10:28:18,266] INFO observerMasterPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+zookeeper-1              | [2025-06-14 10:28:18,266] INFO metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+zookeeper-1              | [2025-06-14 10:28:18,266] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+zookeeper-1              | [2025-06-14 10:28:18,277] INFO ServerMetrics initialized with provider org.apache.zookeeper.metrics.impl.DefaultMetricsProvider@525f1e4e (org.apache.zookeeper.server.ServerMetrics)
+zookeeper-1              | [2025-06-14 10:28:18,282] INFO ACL digest algorithm is: SHA1 (org.apache.zookeeper.server.auth.DigestAuthenticationProvider)
+zookeeper-1              | [2025-06-14 10:28:18,282] INFO zookeeper.DigestAuthenticationProvider.enabled = true (org.apache.zookeeper.server.auth.DigestAuthenticationProvider)
+zookeeper-1              | [2025-06-14 10:28:18,285] INFO zookeeper.snapshot.trust.empty : false (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+zookeeper-1              | [2025-06-14 10:28:18,294] INFO  (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,294] INFO   ______                  _                                           (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,294] INFO  |___  /                 | |                                          (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,294] INFO     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __    (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,294] INFO    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__| (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,294] INFO   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |     (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,294] INFO  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_| (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,294] INFO                                               | |                      (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,294] INFO                                               |_|                      (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,294] INFO  (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,295] INFO Server environment:zookeeper.version=3.8.4-9316c2a7a97e1666d8f4593f34dd6fc36ecc436c, built on 2024-02-12 22:16 UTC (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,295] INFO Server environment:host.name=4894cc5cd85c (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,295] INFO Server environment:java.version=17.0.14 (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,295] INFO Server environment:java.vendor=Eclipse Adoptium (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:java.home=/usr/lib/jvm/temurin-17-jre (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:java.class.path=/usr/bin/../share/java/kafka/jetty-continuation-9.4.57.v20241219.jar:/usr/bin/../share/java/kafka/scala-reflect-2.13.15.jar:/usr/bin/../share/java/kafka/jakarta.validation-api-2.0.2.jar:/usr/bin/../share/java/kafka/jaxb-api-2.3.1.jar:/usr/bin/../share/java/kafka/jakarta.activation-api-1.2.2.jar:/usr/bin/../share/java/kafka/jetty-servlets-9.4.57.v20241219.jar:/usr/bin/../share/java/kafka/javax.activation-api-1.2.0.jar:/usr/bin/../share/java/kafka/connect-basic-auth-extension-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/netty-transport-native-epoll-4.1.118.Final.jar:/usr/bin/../share/java/kafka/connect-api-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/javassist-3.29.2-GA.jar:/usr/bin/../share/java/kafka/kafka-tools-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/jersey-server-2.39.1.jar:/usr/bin/../share/java/kafka/jackson-datatype-jdk8-2.16.2.jar:/usr/bin/../share/java/kafka/kafka-transaction-coordinator-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/netty-resolver-4.1.118.Final.jar:/usr/bin/../share/java/kafka/kafka-streams-scala_2.13-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/kafka-clients-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/jackson-core-2.16.2.jar:/usr/bin/../share/java/kafka/commons-collections-3.2.2.jar:/usr/bin/../share/java/kafka/netty-common-4.1.118.Final.jar:/usr/bin/../share/java/kafka/jersey-container-servlet-2.39.1.jar:/usr/bin/../share/java/kafka/connect-transforms-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/jetty-client-9.4.57.v20241219.jar:/usr/bin/../share/java/kafka/opentelemetry-proto-1.0.0-alpha.jar:/usr/bin/../share/java/kafka/maven-artifact-3.9.6.jar:/usr/bin/../share/java/kafka/jline-3.25.1.jar:/usr/bin/../share/java/kafka/connect-mirror-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/commons-cli-1.4.jar:/usr/bin/../share/java/kafka/kafka.jar:/usr/bin/../share/java/kafka/jackson-jaxrs-base-2.16.2.jar:/usr/bin/../share/java/kafka/kafka-raft-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/kafka-streams-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/jersey-hk2-2.39.1.jar:/usr/bin/../share/java/kafka/zookeeper-jute-3.8.4.jar:/usr/bin/../share/java/kafka/commons-lang3-3.12.0.jar:/usr/bin/../share/java/kafka/plexus-utils-3.5.1.jar:/usr/bin/../share/java/kafka/jackson-module-jaxb-annotations-2.16.2.jar:/usr/bin/../share/java/kafka/jetty-servlet-9.4.57.v20241219.jar:/usr/bin/../share/java/kafka/rocksdbjni-7.9.2.jar:/usr/bin/../share/java/kafka/swagger-annotations-2.2.8.jar:/usr/bin/../share/java/kafka/zookeeper-3.8.4.jar:/usr/bin/../share/java/kafka/error_prone_annotations-2.10.0.jar:/usr/bin/../share/java/kafka/kafka-metadata-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/kafka-streams-test-utils-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/jakarta.annotation-api-1.3.5.jar:/usr/bin/../share/java/kafka/metrics-core-2.2.0.jar:/usr/bin/../share/java/kafka/reflections-0.10.2.jar:/usr/bin/../share/java/kafka/hk2-api-2.6.1.jar:/usr/bin/../share/java/kafka/netty-codec-4.1.118.Final.jar:/usr/bin/../share/java/kafka/jetty-security-9.4.57.v20241219.jar:/usr/bin/../share/java/kafka/jersey-client-2.39.1.jar:/usr/bin/../share/java/kafka/jackson-module-scala_2.13-2.16.2.jar:/usr/bin/../share/java/kafka/kafka-server-common-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/scala-collection-compat_2.13-2.10.0.jar:/usr/bin/../share/java/kafka/trogdor-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/scala-library-2.13.15.jar:/usr/bin/../share/java/kafka/hk2-locator-2.6.1.jar:/usr/bin/../share/java/kafka/jsr305-3.0.2.jar:/usr/bin/../share/java/kafka/kafka-server-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/lz4-java-1.8.0.jar:/usr/bin/../share/java/kafka/kafka-group-coordinator-api-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/netty-transport-native-unix-common-4.1.118.Final.jar:/usr/bin/../share/java/kafka/jetty-server-9.4.57.v20241219.jar:/usr/bin/../share/java/kafka/kafka-shell-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/jetty-util-ajax-9.4.57.v20241219.jar:/usr/bin/../share/java/kafka/pcollections-4.0.1.jar:/usr/bin/../share/java/kafka/jakarta.inject-2.6.1.jar:/usr/bin/../share/java/kafka/protobuf-java-3.25.5.jar:/usr/bin/../share/java/kafka/jetty-util-9.4.57.v20241219.jar:/usr/bin/../share/java/kafka/javax.ws.rs-api-2.1.1.jar:/usr/bin/../share/java/kafka/zstd-jni-1.5.6-4.jar:/usr/bin/../share/java/kafka/snappy-java-1.1.10.5.jar:/usr/bin/../share/java/kafka/commons-validator-1.7.jar:/usr/bin/../share/java/kafka/caffeine-2.9.3.jar:/usr/bin/../share/java/kafka/commons-beanutils-1.9.4.jar:/usr/bin/../share/java/kafka/netty-transport-classes-epoll-4.1.118.Final.jar:/usr/bin/../share/java/kafka/kafka-tools-api-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/connect-runtime-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/commons-digester-2.1.jar:/usr/bin/../share/java/kafka/slf4j-api-1.7.36.jar:/usr/bin/../share/java/kafka/activation-1.1.1.jar:/usr/bin/../share/java/kafka/jersey-common-2.39.1.jar:/usr/bin/../share/java/kafka/javax.annotation-api-1.3.2.jar:/usr/bin/../share/java/kafka/jopt-simple-5.0.4.jar:/usr/bin/../share/java/kafka/jetty-io-9.4.57.v20241219.jar:/usr/bin/../share/java/kafka/connect-json-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/scala-java8-compat_2.13-1.0.2.jar:/usr/bin/../share/java/kafka/jetty-http-9.4.57.v20241219.jar:/usr/bin/../share/java/kafka/aopalliance-repackaged-2.6.1.jar:/usr/bin/../share/java/kafka/jakarta.ws.rs-api-2.1.6.jar:/usr/bin/../share/java/kafka/scala-logging_2.13-3.9.5.jar:/usr/bin/../share/java/kafka/connect-mirror-client-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/osgi-resource-locator-1.0.3.jar:/usr/bin/../share/java/kafka/jersey-container-servlet-core-2.39.1.jar:/usr/bin/../share/java/kafka/kafka-group-coordinator-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/jakarta.xml.bind-api-2.3.3.jar:/usr/bin/../share/java/kafka/jackson-dataformat-csv-2.16.2.jar:/usr/bin/../share/java/kafka/kafka-storage-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/jackson-module-afterburner-2.16.2.jar:/usr/bin/../share/java/kafka/jackson-databind-2.16.2.jar:/usr/bin/../share/java/kafka/metrics-core-4.1.12.1.jar:/usr/bin/../share/java/kafka/slf4j-reload4j-1.7.36.jar:/usr/bin/../share/java/kafka/hk2-utils-2.6.1.jar:/usr/bin/../share/java/kafka/kafka_2.13-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/javax.servlet-api-3.1.0.jar:/usr/bin/../share/java/kafka/audience-annotations-0.12.0.jar:/usr/bin/../share/java/kafka/commons-logging-1.2.jar:/usr/bin/../share/java/kafka/paranamer-2.8.jar:/usr/bin/../share/java/kafka/argparse4j-0.7.0.jar:/usr/bin/../share/java/kafka/reload4j-1.2.25.jar:/usr/bin/../share/java/kafka/jackson-annotations-2.16.2.jar:/usr/bin/../share/java/kafka/jose4j-0.9.4.jar:/usr/bin/../share/java/kafka/netty-handler-4.1.118.Final.jar:/usr/bin/../share/java/kafka/commons-io-2.14.0.jar:/usr/bin/../share/java/kafka/jackson-jaxrs-json-provider-2.16.2.jar:/usr/bin/../share/java/kafka/netty-buffer-4.1.118.Final.jar:/usr/bin/../share/java/kafka/kafka-storage-api-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/kafka-streams-examples-7.9.1-ccs.jar:/usr/bin/../share/java/kafka/netty-transport-4.1.118.Final.jar:/usr/bin/../share/java/confluent-telemetry/* (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:java.library.path=/usr/local/lib64:/usr/local/lib::/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:os.version=6.6.87.1-microsoft-standard-WSL2 (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:user.name=appuser (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:user.home=/home/appuser (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:user.dir=/home/appuser (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:os.memory.free=494MB (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:os.memory.max=512MB (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,296] INFO Server environment:os.memory.total=512MB (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,297] INFO zookeeper.enableEagerACLCheck = false (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,297] INFO zookeeper.digest.enabled = true (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,297] INFO zookeeper.closeSessionTxn.enabled = true (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,297] INFO zookeeper.flushDelay = 0 ms (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,297] INFO zookeeper.maxWriteQueuePollTime = 0 ms (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,297] INFO zookeeper.maxBatchSize=1000 (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,297] INFO zookeeper.intBufferStartingSizeBytes = 1024 (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,298] INFO Weighed connection throttling is disabled (org.apache.zookeeper.server.BlueThrottle)
+zookeeper-1              | [2025-06-14 10:28:18,299] INFO minSessionTimeout set to 4000 ms (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,299] INFO maxSessionTimeout set to 40000 ms (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,300] INFO getData response cache size is initialized with value 400. (org.apache.zookeeper.server.ResponseCache)
+zookeeper-1              | [2025-06-14 10:28:18,300] INFO getChildren response cache size is initialized with value 400. (org.apache.zookeeper.server.ResponseCache)
+zookeeper-1              | [2025-06-14 10:28:18,301] INFO zookeeper.pathStats.slotCapacity = 60 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+zookeeper-1              | [2025-06-14 10:28:18,301] INFO zookeeper.pathStats.slotDuration = 15 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+zookeeper-1              | [2025-06-14 10:28:18,301] INFO zookeeper.pathStats.maxDepth = 6 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+zookeeper-1              | [2025-06-14 10:28:18,301] INFO zookeeper.pathStats.initialDelay = 5 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+zookeeper-1              | [2025-06-14 10:28:18,301] INFO zookeeper.pathStats.delay = 5 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+zookeeper-1              | [2025-06-14 10:28:18,301] INFO zookeeper.pathStats.enabled = false (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+zookeeper-1              | [2025-06-14 10:28:18,303] INFO The max bytes for all large requests are set to 104857600 (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,303] INFO The large request threshold is set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,304] INFO zookeeper.enforce.auth.enabled = false (org.apache.zookeeper.server.AuthenticationHelper)
+zookeeper-1              | [2025-06-14 10:28:18,304] INFO zookeeper.enforce.auth.schemes = [] (org.apache.zookeeper.server.AuthenticationHelper)
+zookeeper-1              | [2025-06-14 10:28:18,304] INFO Created server with tickTime 2000 ms minSessionTimeout 4000 ms maxSessionTimeout 40000 ms clientPortListenBacklog -1 datadir /var/lib/zookeeper/log/version-2 snapdir /var/lib/zookeeper/data/version-2 (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,334] INFO Logging initialized @487ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log)
+zookeeper-1              | [2025-06-14 10:28:18,394] WARN o.e.j.s.ServletContextHandler@1165b38{/,null,STOPPED} contextPath ends with /* (org.eclipse.jetty.server.handler.ContextHandler)
+zookeeper-1              | [2025-06-14 10:28:18,394] WARN Empty contextPath (org.eclipse.jetty.server.handler.ContextHandler)
+zookeeper-1              | [2025-06-14 10:28:18,411] INFO jetty-9.4.57.v20241219; built: 2025-01-08T21:24:30.412Z; git: df524e6b29271c2e09ba9aea83c18dc9db464a31; jvm 17.0.14+7 (org.eclipse.jetty.server.Server)
+zookeeper-1              | [2025-06-14 10:28:18,439] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session)
+zookeeper-1              | [2025-06-14 10:28:18,439] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session)
+zookeeper-1              | [2025-06-14 10:28:18,440] INFO node0 Scavenging every 600000ms (org.eclipse.jetty.server.session)
+zookeeper-1              | [2025-06-14 10:28:18,445] WARN ServletContext@o.e.j.s.ServletContextHandler@1165b38{/,null,STARTING} has uncovered http methods for path: /* (org.eclipse.jetty.security.SecurityHandler)
+zookeeper-1              | [2025-06-14 10:28:18,455] INFO Started o.e.j.s.ServletContextHandler@1165b38{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler)
+zookeeper-1              | [2025-06-14 10:28:18,468] INFO Started ServerConnector@52bf72b5{HTTP/1.1, (http/1.1)}{0.0.0.0:8080} (org.eclipse.jetty.server.AbstractConnector)
+zookeeper-1              | [2025-06-14 10:28:18,468] INFO Started @628ms (org.eclipse.jetty.server.Server)
+zookeeper-1              | [2025-06-14 10:28:18,468] INFO Started AdminServer on address 0.0.0.0, port 8080 and command URL /commands (org.apache.zookeeper.server.admin.JettyAdminServer)
+zookeeper-1              | [2025-06-14 10:28:18,472] INFO Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory (org.apache.zookeeper.server.ServerCnxnFactory)
+zookeeper-1              | [2025-06-14 10:28:18,472] WARN maxCnxns is not configured, using default value 0. (org.apache.zookeeper.server.ServerCnxnFactory)
+zookeeper-1              | [2025-06-14 10:28:18,474] INFO Configuring NIO connection handler with 10s sessionless connection timeout, 2 selector thread(s), 16 worker threads, and 64 kB direct buffers. (org.apache.zookeeper.server.NIOServerCnxnFactory)
+zookeeper-1              | [2025-06-14 10:28:18,476] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+zookeeper-1              | [2025-06-14 10:28:18,487] INFO Using org.apache.zookeeper.server.watch.WatchManager as watch manager (org.apache.zookeeper.server.watch.WatchManagerFactory)
+zookeeper-1              | [2025-06-14 10:28:18,487] INFO Using org.apache.zookeeper.server.watch.WatchManager as watch manager (org.apache.zookeeper.server.watch.WatchManagerFactory)
+zookeeper-1              | [2025-06-14 10:28:18,487] INFO zookeeper.snapshotSizeFactor = 0.33 (org.apache.zookeeper.server.ZKDatabase)
+zookeeper-1              | [2025-06-14 10:28:18,488] INFO zookeeper.commitLogCount=500 (org.apache.zookeeper.server.ZKDatabase)
+zookeeper-1              | [2025-06-14 10:28:18,494] INFO zookeeper.snapshot.compression.method = CHECKED (org.apache.zookeeper.server.persistence.SnapStream)
+zookeeper-1              | [2025-06-14 10:28:18,494] INFO Snapshotting: 0x0 to /var/lib/zookeeper/data/version-2/snapshot.0 (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+zookeeper-1              | [2025-06-14 10:28:18,497] INFO Snapshot loaded in 9 ms, highest zxid is 0x0, digest is 1371985504 (org.apache.zookeeper.server.ZKDatabase)
+zookeeper-1              | [2025-06-14 10:28:18,498] INFO Snapshotting: 0x0 to /var/lib/zookeeper/data/version-2/snapshot.0 (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+zookeeper-1              | [2025-06-14 10:28:18,498] INFO Snapshot taken in 1 ms (org.apache.zookeeper.server.ZooKeeperServer)
+zookeeper-1              | [2025-06-14 10:28:18,505] INFO PrepRequestProcessor (sid:0) started, reconfigEnabled=false (org.apache.zookeeper.server.PrepRequestProcessor)
+zookeeper-1              | [2025-06-14 10:28:18,505] INFO zookeeper.request_throttler.shutdownTimeout = 10000 ms (org.apache.zookeeper.server.RequestThrottler)
+zookeeper-1              | [2025-06-14 10:28:18,522] INFO Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0 (org.apache.zookeeper.server.ContainerManager)
+zookeeper-1              | [2025-06-14 10:28:18,522] INFO ZooKeeper audit is disabled. (org.apache.zookeeper.audit.ZKAuditProvider)
+prometheus-1             | time=2025-06-14T10:28:13.720Z level=INFO source=main.go:674 msg="No time or size retention was set so using the default time retention" duration=15d
+prometheus-1             | time=2025-06-14T10:28:13.720Z level=INFO source=main.go:725 msg="Starting Prometheus Server" mode=server version="(version=3.4.1, branch=HEAD, revision=aea6503d9bbaad6c5faff3ecf6f1025213356c92)"
+prometheus-1             | time=2025-06-14T10:28:13.720Z level=INFO source=main.go:730 msg="operational information" build_context="(go=go1.24.3, platform=linux/amd64, user=root@16f976c24db1, date=20250531-10:44:38, tags=netgo,builtinassets,stringlabels)" host_details="(Linux 6.6.87.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Apr 21 17:08:54 UTC 2025 x86_64 b63b7e85e7d6 localdomain)" fd_limits="(soft=1048576, hard=1048576)" vm_limits="(soft=unlimited, hard=unlimited)"
+prometheus-1             | time=2025-06-14T10:28:13.721Z level=INFO source=main.go:806 msg="Leaving GOMAXPROCS=8: CPU quota undefined" component=automaxprocs
+prometheus-1             | time=2025-06-14T10:28:13.724Z level=INFO source=web.go:656 msg="Start listening for connections" component=web address=0.0.0.0:9090
+prometheus-1             | time=2025-06-14T10:28:13.725Z level=INFO source=main.go:1266 msg="Starting TSDB ..."
+prometheus-1             | time=2025-06-14T10:28:13.729Z level=INFO source=tls_config.go:347 msg="Listening on" component=web address=[::]:9090
+prometheus-1             | time=2025-06-14T10:28:13.729Z level=INFO source=tls_config.go:350 msg="TLS is disabled." component=web http2=false address=[::]:9090
+prometheus-1             | time=2025-06-14T10:28:13.729Z level=INFO source=head.go:657 msg="Replaying on-disk memory mappable chunks if any" component=tsdb
+redis-1                  | Starting Redis Server
+redis-1                  | 1:C 14 Jun 2025 10:28:13.662 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1                  | 1:C 14 Jun 2025 10:28:13.662 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1                  | 1:C 14 Jun 2025 10:28:13.662 * Redis version=8.0.2, bits=64, commit=00000000, modified=1, pid=1, just started
+redis-1                  | 1:C 14 Jun 2025 10:28:13.662 * Configuration loaded
+redis-1                  | 1:M 14 Jun 2025 10:28:13.663 * monotonic clock: POSIX clock_gettime
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * Running mode=standalone, port=6379.
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> RedisBloom version 8.0.1 (Git=unknown)
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> Registering configuration options: [
+prometheus-1             | time=2025-06-14T10:28:13.729Z level=INFO source=head.go:744 msg="On-disk memory mappable chunks replay completed" component=tsdb duration=1.6µs
+prometheus-1             | time=2025-06-14T10:28:13.730Z level=INFO source=head.go:752 msg="Replaying WAL, this may take a while" component=tsdb
+prometheus-1             | time=2025-06-14T10:28:13.731Z level=INFO source=head.go:825 msg="WAL segment loaded" component=tsdb segment=0 maxSegment=0 duration=1.3874ms
+prometheus-1             | time=2025-06-14T10:28:13.731Z level=INFO source=head.go:862 msg="WAL replay completed" component=tsdb checkpoint_replay_duration=72.3µs wal_replay_duration=1.4419ms wbl_replay_duration=200ns chunk_snapshot_load_duration=0s mmap_chunk_replay_duration=1.6µs total_replay_duration=1.8948ms
+prometheus-1             | time=2025-06-14T10:28:13.734Z level=INFO source=main.go:1287 msg="filesystem information" fs_type=EXT4_SUPER_MAGIC
+prometheus-1             | time=2025-06-14T10:28:13.734Z level=INFO source=main.go:1290 msg="TSDB started"
+prometheus-1             | time=2025-06-14T10:28:13.734Z level=INFO source=main.go:1475 msg="Loading configuration file" filename=/etc/prometheus/prometheus.yml
+prometheus-1             | time=2025-06-14T10:28:13.736Z level=INFO source=main.go:1514 msg="updated GOGC" old=100 new=75
+prometheus-1             | time=2025-06-14T10:28:13.736Z level=INFO source=main.go:1524 msg="Completed loading of configuration file" db_storage=2.6µs remote_storage=1.2µs web_handler=700ns query_engine=1.2µs scrape=285µs scrape_sd=40µs notify=1.3µs notify_sd=1.1µs rules=2.3µs tracing=10.6µs filename=/etc/prometheus/prometheus.yml totalDuration=2.1984ms
+prometheus-1             | time=2025-06-14T10:28:13.736Z level=INFO source=main.go:1251 msg="Server is ready to receive web requests."
+prometheus-1             | time=2025-06-14T10:28:13.736Z level=INFO source=manager.go:175 msg="Starting rule manager..." component="rule manager"
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> 	{ bf-error-rate       :      0.01 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> 	{ bf-initial-size     :       100 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> 	{ bf-expansion-factor :         2 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> 	{ cf-bucket-size      :         2 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> 	{ cf-initial-size     :      1024 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> 	{ cf-max-iterations   :        20 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> 	{ cf-expansion-factor :         1 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> 	{ cf-max-expansions   :        32 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.664 * <bf> ]
+redis-1                  | 1:M 14 Jun 2025 10:28:13.665 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis-1                  | 1:M 14 Jun 2025 10:28:13.666 * <search> Redis version found by RedisSearch : 8.0.2 - oss
+redis-1                  | 1:M 14 Jun 2025 10:28:13.666 * <search> RediSearch version 8.0.1 (Git=5688fcc)
+redis-1                  | 1:M 14 Jun 2025 10:28:13.666 * <search> Low level api version 1 initialized successfully
+redis-1                  | 1:M 14 Jun 2025 10:28:13.666 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+redis-1                  | 1:M 14 Jun 2025 10:28:13.666 * <search> Initialized thread pools!
+redis-1                  | 1:M 14 Jun 2025 10:28:13.666 * <search> Disabled workers threadpool of size 0
+redis-1                  | 1:M 14 Jun 2025 10:28:13.666 * <search> Subscribe to config changes
+redis-1                  | 1:M 14 Jun 2025 10:28:13.666 * <search> Enabled role change notification
+redis-1                  | 1:M 14 Jun 2025 10:28:13.667 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis-1                  | 1:M 14 Jun 2025 10:28:13.667 * <search> Register write commands
+redis-1                  | 1:M 14 Jun 2025 10:28:13.667 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis-1                  | 1:M 14 Jun 2025 10:28:13.667 * <timeseries> RedisTimeSeries version 80001, git_sha=577bfa8b5909e7ee572f0b651399be8303dc6641
+redis-1                  | 1:M 14 Jun 2025 10:28:13.667 * <timeseries> Redis version found by RedisTimeSeries : 8.0.2 - oss
+redis-1                  | 1:M 14 Jun 2025 10:28:13.667 * <timeseries> Registering configuration options: [
+redis-1                  | 1:M 14 Jun 2025 10:28:13.667 * <timeseries> 	{ ts-compaction-policy   :              }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.668 * <timeseries> 	{ ts-num-threads         :            3 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.668 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.668 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.668 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.668 * <timeseries> 	{ ts-encoding            :   compressed }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.668 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.668 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis-1                  | 1:M 14 Jun 2025 10:28:13.668 * <timeseries> ]
+redis-1                  | 1:M 14 Jun 2025 10:28:13.668 * <timeseries> Detected redis oss
+redis-1                  | 1:M 14 Jun 2025 10:28:13.668 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * <ReJSON> Created new data type 'ReJSON-RL'
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * <ReJSON> version: 80001 git sha: unknown branch: unknown
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * <ReJSON> Exported RedisJSON_V1 API
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * <ReJSON> Exported RedisJSON_V2 API
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * <ReJSON> Exported RedisJSON_V3 API
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * <ReJSON> Exported RedisJSON_V4 API
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * <ReJSON> Exported RedisJSON_V5 API
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * <ReJSON> Enabled diskless replication
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * <ReJSON> Initialized shared string cache, thread safe: false.
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * <search> Acquired RedisJSON_V5 API
+redis-1                  | 1:M 14 Jun 2025 10:28:13.669 * Server initialized
+redis-1                  | 1:M 14 Jun 2025 10:28:13.670 * Ready to accept connections tcp
+grafana-1                | logger=context userId=0 orgId=0 uname= t=2025-06-14T10:28:41.566405523Z level=info msg="Request Completed" method=GET path=/ status=302 remote_addr=172.20.0.1 time_ms=0 duration=157.5µs size=29 referer= handler=/ status_source=server
+grafana-1                | logger=context userId=1 orgId=1 uname=admin t=2025-06-14T10:28:53.364754404Z level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=172.20.0.1 time_ms=2 duration=2.6496ms size=0 referer= handler=/api/live/ws status_source=server
+grafana-1                | logger=live t=2025-06-14T10:28:59.557944092Z level=info msg="Initialized channel handler" channel=grafana/dashboard/uid/anomaly-detection address=grafana/dashboard/uid/anomaly-detection
+grafana-1                | logger=infra.usagestats t=2025-06-14T10:30:06.793604525Z level=info msg="Usage stats are ready to report"
+grafana-1                | logger=cleanup t=2025-06-14T10:38:14.80209057Z level=info msg="Completed cleanup jobs" duration=12.1656ms
+grafana-1                | logger=plugins.update.checker t=2025-06-14T10:38:15.613264963Z level=info msg="Update check succeeded" duration=357.301597ms
+grafana-1                | logger=cleanup t=2025-06-14T10:48:14.825079905Z level=info msg="Completed cleanup jobs" duration=35.140699ms
+grafana-1                | logger=plugins.update.checker t=2025-06-14T10:48:15.619460488Z level=info msg="Update check succeeded" duration=363.125792ms
+grafana-1                | logger=context userId=1 orgId=1 uname=admin t=2025-06-14T10:52:33.199285268Z level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=172.20.0.1 time_ms=3 duration=3.1336ms size=0 referer= handler=/api/live/ws status_source=server

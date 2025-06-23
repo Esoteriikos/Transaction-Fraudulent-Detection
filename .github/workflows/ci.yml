@@ -1,0 +1,54 @@
+name: Anomaly Detection CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3 # Updated to v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v3 # Updated to v3
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        cd api
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install pytest pytest-cov
+        
+    - name: Run tests
+      run: |
+        cd api
+        pytest --cov=. --cov-report=xml
+        
+    - name: Upload coverage report
+      uses: codecov/codecov-action@v2 # Updated to v2
+      with:
+        file: ./api/coverage.xml
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Build and tag Docker images
+      run: |
+        docker-compose build
+        
+    # In a real-world scenario, you would push to a container registry here
+    # - name: Push Docker images
+    #   run: |
+    #     echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+    #     docker-compose push
