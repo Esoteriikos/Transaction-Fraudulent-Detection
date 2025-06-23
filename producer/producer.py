@@ -2,6 +2,7 @@ import json
 import time
 import os
 import random
+import csv
 from datetime import datetime
 from kafka import KafkaProducer
 from faker import Faker
@@ -71,12 +72,23 @@ def send_transaction(transaction):
     except Exception as e:
         print(f"❌ Failed to send transaction: {e}")
 
+def save_transactions_to_csv(transactions, filename):
+    """Save generated transactions to a CSV file."""
+    if not transactions:
+        return
+    keys = transactions[0].keys()
+    with open(filename, 'w', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=keys)
+        writer.writeheader()
+        writer.writerows(transactions)
+
 def main():
     """Main function to generate and send transactions."""
     print(f"🚀 Starting transaction producer, sending to {KAFKA_BROKER} topic {TRANSACTIONS_TOPIC}")
     
     transactions_count = 0
     anomalies_generated = 0
+    transactions = []  # Collect transactions for saving
     
     while True:
         # Generate anomalies randomly (around 5% of transactions)
@@ -84,6 +96,7 @@ def main():
         
         transaction = generate_transaction(add_anomaly)
         send_transaction(transaction)
+        transactions.append(transaction)
         
         transactions_count += 1
         if add_anomaly:
@@ -94,10 +107,17 @@ def main():
             anomaly_rate = (anomalies_generated / transactions_count) * 100
             print(f"📊 Stats: Generated {transactions_count} transactions, {anomalies_generated} potential anomalies ({anomaly_rate:.2f}%)")
         
+        # Save every 1000 transactions for training
+        if transactions_count % 1000 == 0:
+            save_transactions_to_csv(transactions, "producer_transactions.csv")
+            transactions.clear()
+        
         # Generate approximately 10 transactions per second
         time.sleep(0.1)
 
 if __name__ == "__main__":
     # Wait for Kafka to be ready
-    time.sleep(60)
+    time.sleep(20)
+    print("⚠️ Ensure the model is trained and registered in MLflow before starting the API service.")
+    print("⚠️ If you see runs in the MLflow UI but no files in ./mlruns, check your MLflow artifact storage configuration.")
     main()

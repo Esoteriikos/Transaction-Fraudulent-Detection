@@ -47,15 +47,15 @@ def load_model():
     global model
     try:
         # Use the latest model from MLflow
-        model = mlflow.sklearn.load_model("models:/anomaly_detector/latest") # Corrected model path
+        model_uri = "models:/anomaly_detector/latest"
+        print(f"Loading model from MLflow URI: {model_uri}")
+        model = mlflow.sklearn.load_model(model_uri)
         print("✅ Model loaded successfully")
+        print(f"Model loaded from artifact location: {mlflow.get_artifact_uri(model_uri)}")
     except Exception as e:
         print(f"❌ Failed to load model: {e}")
-        # Fallback to a default model if loading fails
-        from sklearn.ensemble import IsolationForest
-        model = IsolationForest(contamination=0.05, random_state=42)
-        model.fit(np.random.rand(100, 6))  # Fit with dummy data (6 features)
-        print("⚠️ Using fallback model")
+        # Do not use fallback model; fail fast so the issue is visible
+        raise RuntimeError("Model could not be loaded from MLflow. Check artifact storage and configuration.") from e
 
 def extract_features(transaction):
     """
